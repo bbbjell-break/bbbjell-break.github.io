@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YT Editor Center · 소개 및 개인정보 처리 안내</title>
+<style>
+  :root { --ink: #141b2b; --sub: #5d6779; --line: #e2e6ee; --brand: #073474; --bg: #f4f6fa; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+  h1 { font-size: 28px; margin: 0 0 6px; color: var(--brand); }
+  h2 { font-size: 19px; margin: 0 0 10px; }
+  .sub { color: var(--sub); font-size: 14px; }
+  ul { padding-left: 20px; margin: 8px 0; } li { margin: 4px 0; }
+  a { color: var(--brand); }
+  .en { color: var(--sub); font-size: 14px; border-top: 1px solid var(--line); margin-top: 16px; padding-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>YT Editor Center</h1>
+    <p class="sub">EBS 유튜브 에디터 팀의 내부 성과 분석 도구 · 마지막 수정 2026-11-12</p>
+    <p>YT Editor Center는 EBS 유튜브 채널을 운영하는 에디터 팀이 자기 영상의 성과(조회수, 시청시간, 노출 클릭률 등)를 확인하고 제작에 참고하기 위해 쓰는 <b>사내 전용 도구</b>입니다.
+    일반에 공개된 서비스가 아니며, 회사 내부망에서 담당자와 소속 에디터만 사용합니다.</p>
+    <p class="en">YT Editor Center is an internal analytics tool used only by the EBS YouTube editor team to review the performance of their own videos. It is not a public service.</p>
+  </div>
+
+  <div class="card" id="privacy">
+    <h2>개인정보 처리 안내 (Privacy Policy)</h2>
+
+    <p><b>1. 어떤 데이터를 쓰나요</b></p>
+    <ul>
+      <li>담당자가 구글 계정으로 허용한 범위에서, EBS가 관리하는 유튜브 채널의 영상 정보와 성과 통계를 <b>읽기만</b> 합니다 (YouTube Data API, YouTube Analytics API, YouTube Reporting API).</li>
+      <li>에디터 업무 기록이 담긴 구글 스프레드시트를 <b>읽기만</b> 합니다 (Google Sheets API, Google Drive API).</li>
+      <li>시청자 개인의 정보(이름, 이메일 등)는 받지 않습니다. 성과 통계는 영상·채널 단위 합계입니다.</li>
+    </ul>
+
+    <p><b>2. 어떻게 쓰나요</b></p>
+    <ul>
+      <li>에디터별 영상 성과를 정리하고, 에디터가 질문하면 분석 결과를 답하는 데만 씁니다.</li>
+      <li>답을 만들 때 영상 제목·성과 숫자 같은 필요한 정보를 AI 분석 서비스(Anthropic Claude API)에 보냅니다. 이 정보는 답을 만드는 데만 쓰이며, 광고나 판매에 쓰지 않습니다.</li>
+      <li>데이터를 수정하거나 삭제하는 권한은 요청하지 않으며, 유튜브 채널이나 시트에 아무것도 쓰지 않습니다.</li>
+    </ul>
+
+    <p><b>3. 어디에 보관하나요</b></p>
+    <ul>
+      <li>받은 데이터는 회사 내부망의 PC 한 대에만 저장하고, 외부에 공개하거나 제3자에게 판매·제공하지 않습니다.</li>
+      <li>더 이상 쓰지 않게 되면 저장된 데이터를 지웁니다.</li>
+    </ul>
+
+    <p><b>4. 허용을 철회하려면</b></p>
+    <ul>
+      <li>구글 계정의 <a href="https://myaccount.google.com/permissions">서드 파티 액세스 관리</a>에서 언제든 이 도구의 접근 허용을 철회할 수 있습니다.</li>
+    </ul>
+
+    <p><b>5. 지켜야 할 약관</b></p>
+    <ul>
+      <li>이 도구는 YouTube API 서비스를 사용합니다. <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 함께 적용됩니다.</li>
+      <li>YT Editor Center가 Google API로 받은 정보를 쓰고 옮기는 방식은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>(Limited Use 요건 포함)을 따릅니다.</li>
+    </ul>
+
+    <p><b>6. 문의</b></p>
+    <ul>
+      <li>EBS 유튜브 에디터 팀 담당자: <a href="mailto:bbbjell@gmail.com">bbbjell@gmail.com</a></li>
+    </ul>
+
+    <p class="en">YT Editor Center reads (read-only) video metadata and aggregated performance statistics for EBS-managed YouTube channels, and an internal Google Sheet, only with the administrator's consent.
+    It does not collect viewers' personal information. Data is used solely to analyze the editor team's video performance; relevant titles and statistics are sent to an AI analysis service (Anthropic Claude API) only to generate answers, never for advertising or sale.
+    Data is stored on a single PC inside the company network and is not shared with or sold to third parties. Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.
+    This tool uses YouTube API Services; the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a> apply.
+    YT Editor Center's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  </div>
+</main>
+</body>
+</html>
